@@ -1,6 +1,6 @@
 # NM Adventures
 ## Overview
-Travel Suggestor is a full-stack web application built using the MERN (MongoDB, Express, React, Node.js) stack. The application allows users to register and receive travel suggestions based on their preferences.
+NM Adventures is a full-stack web application built using the MERN (MongoDB, Express, React, Node.js) stack. The application allows users to register and receive travel suggestions based on their preferences.
 
 ## Features
 - User registration
