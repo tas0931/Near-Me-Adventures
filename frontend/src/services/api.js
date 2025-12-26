@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:5001/api';
+const BASE = 'https://near-me-adventures-backend.onrender.com/api';
 
 async function request(path, options = {}) {
   const headers = options.headers || {};
