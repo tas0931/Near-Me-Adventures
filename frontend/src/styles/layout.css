@@ -1,0 +1,166 @@
+/* Layout styles - Theme aware */
+.app-layout {
+  min-height: 100vh;
+  background: var(--dark-charcoal);
+}
+
+.main-content {
+  margin-top: 64px;
+  margin-left: 260px;
+  padding: 32px;
+  min-height: calc(100vh - 64px);
+  transition: margin-left 0.3s ease;
+  background: linear-gradient(135deg, var(--dark-charcoal) 0%, var(--charcoal-black) 100%);
+}
+
+.main-content.sidebar-closed {
+  margin-left: 0;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 0;
+  }
+  
+  .main-content.sidebar-open {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px 16px;
+  }
+}
+
+/* Update page container for theme */
+.page {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-gray);
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.page h1, .page h2, .page h3, .page h4 {
+  color: var(--text-primary);
+}
+
+.page .brand-heading {
+  color: var(--text-primary) !important;
+}
+
+.page .muted {
+  color: var(--text-secondary) !important;
+}
+
+/* Card updates for theme */
+.card-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border-gray);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.card-title {
+  color: var(--text-primary);
+}
+
+.card-desc {
+  color: var(--text-secondary);
+}
+
+.card-meta {
+  color: var(--text-secondary);
+}
+
+/* Input fields for theme */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+.search-input {
+  background: var(--input-bg);
+  border: 1px solid var(--border-gray);
+  color: var(--text-primary);
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+textarea::placeholder,
+.search-input::placeholder {
+  color: var(--text-secondary);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: var(--input-bg);
+}
+
+/* Button updates */
+button:not(.btn-logout):not(.sidebar-toggle):not(.theme-toggle) {
+  background: var(--primary);
+  color: var(--text-primary) !important;
+}
+
+button:not(.btn-logout):not(.sidebar-toggle):not(.theme-toggle):hover {
+  background: var(--hover-gray) !important;
+}
+
+/* Action cards */
+.action-card {
+  background: linear-gradient(135deg, var(--card-bg) 0%, var(--border-gray) 100%);
+  border: 1px solid var(--border-gray);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* Modal updates */
+.modal {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-gray);
+}
+
+/* Toast updates */
+.toast {
+  background: var(--card-bg);
+  border: 1px solid var(--border-gray);
+}
+
+.toast-message {
+  color: var(--text-primary);
+}
+
+/* Table updates for analytics pages */
+table {
+  color: var(--text-primary);
+  border-color: var(--border-gray);
+}
+
+th, td {
+  border-color: var(--border-gray);
+  color: var(--text-primary) !important;
+}
+
+/* Suggestions dropdown */
+.suggestions {
+  background: var(--card-bg);
+  border: 1px solid var(--border-gray);
+}
+
+.suggestion-item button {
+  color: var(--text-primary);
+}
+
+.suggestion-item button:hover {
+  background: var(--hover-gray);
+}
+
+/* Labels */
+label {
+  color: var(--text-secondary);
+}

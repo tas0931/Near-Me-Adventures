@@ -1,0 +1,142 @@
+/* Sidebar styles - Theme aware */
+.sidebar {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 260px;
+  height: calc(100vh - 64px);
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--border-gray);
+  z-index: 999;
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  box-shadow: 2px 0 8px var(--shadow);
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: var(--sidebar-bg);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--hover-gray);
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--border-gray);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar-content {
+  padding: 20px 0;
+}
+
+.sidebar-section {
+  margin-bottom: 32px;
+}
+
+.sidebar-section-title {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0 20px;
+  margin-bottom: 12px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  position: relative;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-link:hover {
+  background: var(--sidebar-hover);
+  color: var(--text-primary);
+  border-left-color: var(--primary);
+}
+
+.sidebar-link.active {
+  background: var(--sidebar-hover);
+  color: var(--text-primary);
+  border-left-color: var(--primary);
+  font-weight: 600;
+}
+
+.sidebar-icon {
+  font-size: 1.25rem;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-label {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.sidebar-badge {
+  background: #dc2626;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.sidebar-overlay {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    max-width: 280px;
+  }
+}

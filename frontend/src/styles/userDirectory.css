@@ -1,0 +1,222 @@
+/* Find People Page Styles */
+.find-people-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.find-people-header {
+  margin-bottom: 30px;
+}
+
+.find-people-header h1 {
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.search-count {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Users Grid */
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.user-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.user-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.user-details {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+.user-email {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 5px 0;
+  word-break: break-word;
+}
+
+.user-joined {
+  font-size: 0.8rem;
+  color: #999;
+  margin: 5px 0 0 0;
+}
+
+.user-actions {
+  width: 100%;
+}
+
+/* No Users State */
+.no-users {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.no-users p {
+  font-size: 1.1rem;
+}
+
+/* Loading State */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Error State */
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  font-size: 1.1rem;
+  color: #dc3545;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .find-people-page {
+    padding: 15px;
+  }
+
+  .find-people-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .users-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    min-width: 100%;
+  }
+
+  .user-card {
+    padding: 15px;
+  }
+
+  .user-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .find-people-header h1 {
+    color: #f0f0f0;
+  }
+
+  .subtitle,
+  .user-email,
+  .search-count {
+    color: #b0b0b0;
+  }
+
+  .user-card {
+    background: #2a2a2a;
+    border-color: #404040;
+  }
+
+  .user-name {
+    color: #f0f0f0;
+  }
+
+  .search-input {
+    background: #2a2a2a;
+    border-color: #404040;
+    color: #f0f0f0;
+  }
+
+  .search-input:focus {
+    border-color: #667eea;
+  }
+}
