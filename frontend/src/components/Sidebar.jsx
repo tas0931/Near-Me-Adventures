@@ -23,9 +23,9 @@ export default function Sidebar({ isOpen, unreadChat, pendingConnections }) {
   ];
 
   const adminItems = [
+    { path: '/admin', icon: '⚙️', label: 'Admin Dashboard' },
     { path: '/add-experiences', icon: '➕', label: 'Add Experience' },
     { path: '/created-experiences', icon: '📝', label: 'My Experiences' },
-    { path: '/admin', icon: '⚙️', label: 'Admin Dashboard' },
     { path: '/analysis', icon: '📈', label: 'Analytics' },
   ];
 
