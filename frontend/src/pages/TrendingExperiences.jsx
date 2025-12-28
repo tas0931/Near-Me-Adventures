@@ -33,7 +33,7 @@ export default function TrendingExperiences() {
         </div>
         <div style={{ display: 'flex', gap: 8 }}>
             <button onClick={() => navigate('/home')}>Back to Home</button>
-            <Link to="/browse"><button>Browse Experiences</button></Link>
+            <Link to="/all-places"><button>Browse Experiences</button></Link>
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
