@@ -129,7 +129,7 @@ export default function SuggestPlaces() {
           <p className="admin-subtitle">Help us grow our collection of amazing destinations</p>
         </div>
         <div className="admin-actions">
-          <button className="admin-btn admin-btn-secondary" onClick={() => navigate('/browse')}>
+          <button className="admin-btn admin-btn-secondary" onClick={() => navigate('/all-places')}>
             🌍 Browse Places
           </button>
         </div>
