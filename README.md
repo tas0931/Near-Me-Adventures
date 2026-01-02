@@ -1,7 +1,7 @@
 # NM Adventures
 ## Overview
 NM Adventures is a full-stack web application built using the MERN (MongoDB, Express, React, Node.js) stack. The application allows users to register and receive travel suggestions based on their preferences.
-
+Deployed link: `https://near-me-adventures.onrender.com/'
 ## Features
              1.  Wishlist- for later bookings : Enables users to save online-listed events (offline or online events) to a wishlist for easy access and future booking.
 
