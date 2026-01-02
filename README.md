@@ -95,50 +95,9 @@ NM Adventures
 └── README.md             # Project documentation
 ```
 
-## Getting Started
 
-### Prerequisites
-- Node.js
-- MongoDB
-
-### Installation
-
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd travel-suggestor
-   ```
-
-2. Install backend dependencies:
-   ```
-   cd backend
-   npm install
-   ```
-
-3. Install frontend dependencies:
-   ```
-   cd ../frontend
-   npm install
-   ```
-
-### Configuration
-- Create/Edit `backend/.env` and set MONGO_URI, JWT_SECRET, PORT
-
-### Running the Application
-
-1. Start the backend:
-   ```
-   cd backend
-   npm start
-   ```
-
-2. Start the frontend:
-   ```
-   cd frontend
-   npm start
-   ```
 
 ### Usage
-- Navigate to `http://localhost:3000` to access the application.
-- Use the registration page to create a new account.
+-Deployed link: `https://near-me-adventures.onrender.com/' 
+-Use the registration page to create a new account and then login to start using this system
 
